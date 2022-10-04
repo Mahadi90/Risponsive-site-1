@@ -54,6 +54,16 @@ nav ul li a:hover,nav ul li a.active{
      cursor: pointer;
      display: none;
 }
+
+/* header part start here */
+header{
+    background-image: url(images/banner.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 /* responsive part start here  */
 
 @media only screen and (max-width: 940px){
@@ -90,4 +100,62 @@ nav ul li a:hover,nav ul li a.active{
       background: none;
       color: red;
   }
+}
+
+/* first section of main part start here */
+#first-section{
+    background-color: #1C2833;
+}
+.services-title{
+    font-size: 28px;
+    letter-spacing: .2rem;
+    text-align: center;
+    padding: 50px 0;
+    color: white;
+}
+.services-parent{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 25px;
+    width: 1100px;
+    margin: 0 auto;
+    padding-bottom: 50px ;
+}
+.services-card{
+    background-color: white;
+    text-align: center;
+    padding: 20px 10px;
+    border-radius: 5px;
+    border: 1px solid green;
+    box-shadow: 5px 5px 5px rgb(95, 94, 94);
+}
+.services-card i{
+    font-size: 35px;
+    margin: 10px 0;
+}
+.services-card h3{
+    margin: 10px 0;
+    font-size: 25px;
+}
+.services-card p{
+    margin-bottom: 10px;
+    font-weight:500;
+}
+
+/* main part media code start here */
+@media only screen and (max-width: 688px){
+    .services-parent{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 20px;
+        width: 100%;
+    }
+}
+@media only screen and (min-width:689px) and (max-width:1099px){
+     .services-parent{
+         display: grid;
+         grid-template-columns: repeat(2,1fr);
+         grid-gap: 10px;
+         width: 100%;
+     }
 }

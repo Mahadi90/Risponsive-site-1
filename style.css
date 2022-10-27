@@ -523,6 +523,12 @@ span{
     border-radius: 5px;
 }
 
+hr{
+    width: 100%;
+}
+footer p{
+    width: 100%;
+}
 /*  media code start here */
 @media only screen and (max-width: 688px){
     /* service part start here */
@@ -627,6 +633,12 @@ span{
         display: flex;
         flex-direction: column;
     }
+    hr{
+        width: 100%;
+    }
+    footer p{
+        width: 100%;
+    }
 }
 @media only screen and (min-width:689px) and (max-width:1099px){
     /* service part start here */
@@ -724,5 +736,11 @@ span{
     .social-footer h2{
         text-align: center;
         margin-right: 60px;
+    }
+    hr{
+        width: 100%;
+    }
+    footer p{
+        width: 100%;
     }
 }
